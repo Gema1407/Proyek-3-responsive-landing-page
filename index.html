@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Responsive Web Design</title>
+    <title>Personal Website</title>
 </head>
+
 <body>
-    <h1></h1>
+    <header>
+        <nav class="navbar">
+            <h2>Responsive Web Design</h2>
+            <div class="navbar-links">
+                <a href="#about">
+                    <p>About</p>
+                </a>
+                <a href="#pendidikan-pengalaman">Education<p></p></a>
+                <a href="#skills">
+                    <p>Skills</p>
+                </a>
+                <a href="#proyek/portfolio">
+                    <p>Proyek/Portfolio</p>
+                </a>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Data Diri -->
+        <section class="about" id="about">
+            <img src="/image/foto.jpg" alt="Foto Profil" class="profile-photo">
+            <div class="about-text">
+                <h2>Halo, saya Gema Adzan Firdaus</h2>
+                <p>Saya adalah mahasiswa semester 3 pada Program Studi Teknik Informatika yang memiliki ketertarikan
+                    pada pengembangan software. Selain itu, saya juga memiliki pengalaman dalam beberapa proyek, seperti
+                    pembuatan film pendek, menjadi bagian dari tim produksi properti untuk teater dan kabaret, serta
+                    bertugas sebagai operator lighting pada pertunjukan teater
+                </p>
+            </div>
+        </section>
+
+        <!-- Pendidikan & Pengalaman -->
+       
+            <section class="pendidikan-pengalaman" id="pendidikan-pengalaman">
+                <h2>Riwayat Pendidikan</h2>
+                <ul>
+                    <li><img src="/image/LOGO POLBAN 4K.png"><strong>2024 - Sekarang:</strong> Mahasiswa Informatika di
+                        Polban</li>
+                    <li><img src="/image/logo smanda.png"><strong>2021 - 2024:</strong> Pelajar di SMAN 2 Bandung</li>
+                    <li><img src="/image/smp kartika.jpeg"><strong>2018 - 2021:</strong> Pelajar di SMP Kartika XIX-1
+                        Bandung</li>
+                    <li><img src="/image/logo sdn 001 merdeka.jpeg"><strong>2012 - 2018:</strong> Pelajar di SDN 001
+                        Merdeka Bandung</li>
+                </ul>
+
+                <h2>Pengalaman</h2>
+                <ul>
+                    <li>Operator Lighting Teater</li>
+                    <li>Tim Produksi Properti Teater dan Kabaret</li>
+                    <li>Anggota HIMAKOM DBU ILPROF</li>
+                </ul>
+            </section>
+
+            <!-- Skills/Keterampilan -->
+            <section class="skills" id="skills">
+                <h2>Hard Skills</h2>
+                <ul>
+                    <li><strong>Bahasa Inggris</strong>  - <i>Intermediate</i> menguasai Speaking dan Listening dengan cukup baik</li>
+                    <li><strong>Front-End Web Development</strong> - <i>Beginner</i> menguasai HTML dan sebagian CSS</li>
+                </ul>
+
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li><strong>Kerjasama Tim</strong> - Dapat bekerjasama dana berkomunikasi dengan baik dalam kerja tim</li>
+                    <li><strong>Manajemen Waktu</strong> - Dapat mengatur prioritas dan time blocking dengan baik</li>
+                    <li><strong>Work Ethic</strong> - Disiplin dan bertanggung jawab pada pekerjaan</li>
+                </ul>
+            </section>
+
+        <!-- Portofolio -->
+        <section class="portfolio" id="proyek/portfolio">
+            <h2>Proyek / Portofolio</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Space Invader</h3>
+                    <p>Mengembangkan permainan Space Invader menggunakan bahasa C dengan library SDL3 untuk grafis, termasuk implementasi mekanisme gameplay, kontrol pemain, dan tampilan visual, sebagai bagian dari tugas Proyek 2.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Operator Lighting untuk Teater</h3>
+                    <p>Menjadi operator lighting pada pertunjukan teater, bertanggung jawab mengatur warna, intensitas, dan arah lampu agar sesuai dengan mood tiap adegan, sehingga menciptakan atmosfer yang mendukung cerita dan pengalaman penonton.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Kontak -->
+    <footer class="footer">
+        <h2>Kontak</h2>
+        <a href="gema.adzan.tif24@polban.ac.id">gema.adzan.tif24@polban.ac.id</a>
+        <ul class="contact-container">
+            <li><a href="https://github.com/Gema1407" target="_blank"><img src="/image/github.svg" alt="GitHub"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="/image/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/gema-adzan-firdaus-69a036355/" target="_blank"><img src="/image/linkedin.svg" alt="LinkedIn"></a></li>
+        </ul>
+        <p id="copyright">©️ 2025</p>
+    </footer>
 </body>
+
 </html>

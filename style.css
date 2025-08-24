@@ -1,4 +1,162 @@
 * {
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f9f9f9;
+}
+
+a:hover {
+    color: #C9CDCF;
+}
+
+body {
+    font-family: Noto Sans;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #444;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-photo {
+    width: 150px;
+    border: 5px;
+    border-style: double;
+    border-radius: 20%;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.skills ul,
+.pendidikan-pengalaman ul {
+    margin-top: 0.5rem;
+}
+
+.skills li,
+.pendidikan-pengalaman li {
+    margin-bottom: 0.5rem;
+}
+
+.pendidikan-pengalaman img {
+    width: 1rem;
+    margin-right: 6px;
+}
+
+.portfolio .projects {
+    display: flex;
+    gap: 2rem;
+}
+
+.project-card {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #444;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    list-style: none;
+}
+
+.contact-container img {
+    width: 30px;
+    height: auto;
+}
+
+/* ---------------- Responsive (Media Queries) ---------------- */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio .projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .navbar {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        width: 120px;
+    }
+
+    .contact-container img {
+        width: 24px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 300px) {
+    .contact-container {
+        display: flex;        
+        flex-direction: column; 
+        gap: 10px;            
+        align-items: center;  
+    }
 }
